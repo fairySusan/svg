@@ -1,0 +1,4 @@
+<div class="main-box">
+  <div class="common" *ngFor="let item of mockData; let i = index" [ngStyle]="item.style" [ngClass]="item.className"
+  (click)="clickSelf(i)">{{item.name}}</div>
+</div>
